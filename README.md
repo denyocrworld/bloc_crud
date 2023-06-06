@@ -3,12 +3,12 @@
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-Join%20Kelas%20Online-brightgreen.svg?logo=whatsapp&style=social)](https://wa.me/6282146727409?text=Hallo,%20saya%20ingin%20join%20kelas%20Online%20/w%20DenyOcr)
 
 
-## Hyper UI
+# Hyper UI
 Hyper UI adalah kumpulan sampel ReuseableWidget Flutter yang bisa kamu gunakan untuk projectmu.
 Pada dasar-nya, Hyper UI dibuat dengan tujuan untuk edukasi.
 So, project ini dibuat sesederhana mungkin dan semudah mungkin untuk digunakan.
 
-### Architecture
+## Architecture
 Architecture yang digunakan adalah MVC.
 Dimana state management-nya menggunakan StatefulWidget. 
 
@@ -52,7 +52,7 @@ onButtonSaveClicK() {
 ```
 
 
-### Reuseable Widget
+## Reuseable Widget
 Saat ini fokus utama kami adalah membuat Reuseable Widget terkait Form. Intinya kami ingin mempermudah pembuatan Form di Flutter, yang terkadang itu terlalu rumit jika dibandingkan dengan pembuatan Form di HTML misalnya.
 
 Dengan Hyper UI, kamu bisa membuat Form dengan lebih cepat dan mudah.
@@ -75,9 +75,11 @@ QImagePicker
 QRatingField
 QLocationPicker
 ```
+<hr/>
 
-![GitHub Logo](https://i.ibb.co/8m30PWv/1.png | width=200)
+## Screenshots
 
-![GitHub Logo](https://i.ibb.co/NjqM6Cd/2.png | width=200)
-
-![GitHub Logo](https://i.ibb.co/VmWGt9J/3.png | width=200)
+<img src="https://i.ibb.co/8m30PWv/1.png" style="width: 240px;"/><br/>
+<img src="https://i.ibb.co/NjqM6Cd/2.png" style="width: 240px;"/><br/>
+<img src="https://i.ibb.co/VmWGt9J/3.png" style="width: 240px;"/><br/>
+<hr/>
