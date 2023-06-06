@@ -6,6 +6,7 @@ ThemeData getDefaultTheme() {
   return ThemeData().copyWith(
     primaryColor: primaryColor,
     scaffoldBackgroundColor: Colors.white,
+    colorScheme: ColorScheme.fromSeed(seedColor: primaryColor),
     appBarTheme: AppBarTheme(
       backgroundColor: Colors.white,
       elevation: 0.6,
@@ -44,6 +45,35 @@ ThemeData getDefaultTheme() {
       bodyMedium: GoogleFonts.lato(
         color: Colors.blueGrey[900],
       ),
+    ),
+    inputDecorationTheme: InputDecorationTheme(
+      hoverColor: Colors.transparent,
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(8.0),
+        borderSide: BorderSide(
+          color: Colors.grey[300]!,
+        ),
+      ),
+      enabledBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(8.0),
+        borderSide: BorderSide(
+          color: Colors.grey[300]!,
+        ),
+      ),
+      errorBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(8.0),
+        borderSide: BorderSide(
+          color: Colors.red,
+        ),
+      ),
+      disabledBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(8.0),
+        borderSide: BorderSide(
+          color: Colors.grey[300]!,
+        ),
+      ),
+      filled: true,
+      fillColor: Color(0xfffbfbfb),
     ),
   );
 }

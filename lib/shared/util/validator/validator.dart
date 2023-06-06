@@ -1,5 +1,3 @@
-
-
 class Validator {
   static String? rule(
     String? value, {
@@ -11,20 +9,17 @@ class Validator {
     return null;
   }
 
-  
   static String? required(
     dynamic value, {
     String? fieldName,
   }) {
-    print(value is List);
-    print("vvvv: $value");
+    if (value == null) {
+      return "This field is required";
+    }
+
     if (value is String || value == null) {
       if (value.toString() == "null") return "This field is required";
       if (value.isEmpty) return "This field is required";
-    }
-
-    if (value is int) {
-      if (value == -1) return "This field is required";
     }
 
     if (value is List) {
@@ -56,7 +51,6 @@ class Validator {
     return null;
   }
 
-  
   static String? atLeastOneitem(List<Map<String, dynamic>> items) {
     var checkedItems = items.where((i) => i["checked"] == true).toList();
     if (checkedItems.isEmpty) {
@@ -65,4 +59,3 @@ class Validator {
     return null;
   }
 }
-

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hyper_ui/shared/widget/widget_demo/widget_demo.dart';
 import 'core.dart';
 
 Widget debugView({
@@ -38,6 +39,14 @@ Widget debugView({
                 ),
                 const SizedBox(
                   height: 12.0,
+                ),
+                InkWell(
+                  onTap: () => Get.to(HUIWidgetDemoView()),
+                  child: const Icon(
+                    Icons.widgets,
+                    color: Colors.white,
+                    size: 12.0,
+                  ),
                 ),
               ],
             ),

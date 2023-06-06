@@ -4,9 +4,6 @@ import 'package:hyper_ui/debug.dart';
 
 void main() async {
   await initialize();
-
-  
-  Get.mainTheme.value = getDarkTheme();
   runMainApp();
 }
 
@@ -19,23 +16,17 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ValueListenableBuilder(
-      valueListenable: Get.mainTheme,
-      builder: (context, value, child) {
-        return MaterialApp(
-          title: 'Capek Ngoding',
-          navigatorKey: Get.navigatorKey,
-          debugShowCheckedModeBanner: false,
-          theme: value,
-          
-          home: CgMapView(),
-          builder: (context, child) => debugView(
-            context: context,
-            child: child,
-            visible: true,
-          ),
-        );
-      },
+    return MaterialApp(
+      title: 'Capek Ngoding',
+      navigatorKey: Get.navigatorKey,
+      debugShowCheckedModeBanner: false,
+      theme: getDefaultTheme(),
+      home: MainNavigationView(),
+      builder: (context, child) => debugView(
+        context: context,
+        child: child,
+        visible: true,
+      ),
     );
   }
 }
