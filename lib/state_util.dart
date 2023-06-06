@@ -13,7 +13,7 @@ class Get {
   }
 
   static to(Widget page) async {
-    await navigatorKey.currentState!.push(
+    return await navigatorKey.currentState!.push(
       MaterialPageRoute(builder: (context) => page),
     );
   }
@@ -24,7 +24,7 @@ class Get {
   }
 
   static offAll(page) {
-    navigatorKey.currentState!.pushAndRemoveUntil(
+    return navigatorKey.currentState!.pushAndRemoveUntil(
       MaterialPageRoute(builder: (context) => page),
       (Route<dynamic> route) => false,
     );

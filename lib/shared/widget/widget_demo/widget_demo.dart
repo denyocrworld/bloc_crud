@@ -40,23 +40,23 @@ class _HUIWidgetDemoViewState extends State<HUIWidgetDemoView> {
             key: formKey,
             child: Column(
               children: [
-                QNumberField(
-                  label: "Age",
+                QImagePicker(
+                  label: "Photo",
                   validator: Validator.required,
-                  value: counter?.toString(),
+                  value: null,
                   onChanged: (value) {},
                 ),
                 QTextField(
                   label: "Name",
                   hint: "Name",
                   validator: Validator.required,
-                  value: counter?.toString(),
+                  value: "John Doe",
                   onChanged: (value) {},
                 ),
-                QImagePicker(
-                  label: "Photo",
+                QNumberField(
+                  label: "Age",
                   validator: Validator.required,
-                  value: null,
+                  value: counter?.toString(),
                   onChanged: (value) {},
                 ),
                 QDropdownField(
@@ -73,13 +73,6 @@ class _HUIWidgetDemoViewState extends State<HUIWidgetDemoView> {
                     }
                   ],
                   onChanged: (value, label) {},
-                ),
-                QLocationPicker(
-                  id: "location",
-                  label: "Location",
-                  latitude: -6.218481065235333,
-                  longitude: 106.80254435779423,
-                  onChanged: (latitude, longitude) {},
                 ),
                 QCategoryPicker(
                   label: "Category",
@@ -109,11 +102,12 @@ class _HUIWidgetDemoViewState extends State<HUIWidgetDemoView> {
                   validator: Validator.required,
                   onChanged: (value) {},
                 ),
-                QRatingField(
-                  label: "Rating",
-                  value: 3.4,
-                  validator: Validator.required,
-                  onChanged: (value) {},
+                QLocationPicker(
+                  id: "location",
+                  label: "Location",
+                  latitude: -6.218481065235333,
+                  longitude: 106.80254435779423,
+                  onChanged: (latitude, longitude) {},
                 ),
                 QAutoComplete(
                   label: "Favorite employee",
