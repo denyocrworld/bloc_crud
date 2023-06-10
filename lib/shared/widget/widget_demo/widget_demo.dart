@@ -20,7 +20,7 @@ class _HUIWidgetDemoViewState extends State<HUIWidgetDemoView> {
         title: Text("Widget Demo"),
         actions: [
           Container(
-            padding: const EdgeInsets.all(12.0),
+            padding: EdgeInsets.all(12.0),
             child: ElevatedButton(
               onPressed: () {
                 bool isValid = formKey.currentState!.validate();
