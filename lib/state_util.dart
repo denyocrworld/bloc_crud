@@ -52,6 +52,7 @@ class Get {
 extension ChangeNotifierExtension on State {
   update() {
     if (mounted) {
+      // ignore: invalid_use_of_protected_member
       setState(() {});
     }
   }
