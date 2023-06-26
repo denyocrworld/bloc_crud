@@ -1,32 +1,30 @@
 import 'package:hyper_ui/core.dart';
 import 'package:flutter/material.dart';
-import 'package:hyper_ui/debug.dart';
 
-void main() async {
-  await initialize();
-  runMainApp();
+/*
+YT: Capek Ngoding
+Join Kelas: capekngoding.com
+https://tinyurl.com/berandal-groupz
+*/
+
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(const MyApp());
 }
 
-runMainApp() async {
-  return runApp(const MainApp());
-}
-
-class MainApp extends StatelessWidget {
-  const MainApp({Key? key}) : super(key: key);
-
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Capek Ngoding',
+      title: 'Flutter HyperExample',
       navigatorKey: Get.navigatorKey,
       debugShowCheckedModeBanner: false,
-      theme: getDefaultTheme(),
-      home: MainNavigationView(),
-      builder: (context, child) => debugView(
-        context: context,
-        child: child,
-        visible: true,
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
       ),
+      home: MultipleSelectionView(),
     );
   }
 }

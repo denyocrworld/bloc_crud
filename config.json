@@ -1,0 +1,14 @@
+{
+    "modules": [
+        "product_list",
+        "product_form",
+        "customer_list",
+        "customer_form",
+        "customer_detail",
+        "multiple_selection",
+        "tiktok_user_list"
+    ],
+    "module_directory_name": "presentation",
+    "experimental_mode": false,
+    "unfreezed": true
+}
